@@ -72,6 +72,58 @@
     li {
       margin-bottom: 8px;
     }
+
+    .products-section {
+      margin-top: 40px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 16px 20px 0;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery img:hover {
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
@@ -118,6 +170,32 @@
         Quý đối tác trong suốt chặng đường phát triển.
       </p>
     </article>
-  </main>
+
+    <section class="products-section">
+      <div class="card">
+        <h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
+        <div class="products-grid">
+          <div class="product-card">
+            <h3 class="product-title">Nắp Chai Xanh Dương (307 Blue)</h3>
+            <div class="gallery">
+              <img src="product_img/307_blue/z7814208896027_3ee51f47c8496d8bb2225c6800f42923.jpg" alt="Nắp chai xanh dương 1">
+              <img src="product_img/307_blue/z7814208903232_bab7589a76e2170bee92d17fa20326d8.jpg" alt="Nắp chai xanh dương 2">
+              <img src="product_img/307_blue/z7814208905469_f5d20cedd3f19b439bfc331637fb49e4.jpg" alt="Nắp chai xanh dương 3">
+              <img src="product_img/307_blue/z7814208917298_29a8e14d498500045d6a22e3bec450da.jpg" alt="Nắp chai xanh dương 4">
+              <img src="product_img/307_blue/z7814208925989_24c78e48c5600197a7298577a21df261.jpg" alt="Nắp chai xanh dương 5">
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3 class="product-title">Nắp Chai Xanh Lá (307 Green)</h3>
+            <div class="gallery">
+              <img src="product_img/307_green/z7814233439312_ca537363ee59c3b67a9816ec60f29172.jpg" alt="Nắp chai xanh lá 1">
+              <img src="product_img/307_green/z7814233444657_624c6671cf7548dba35321e23cd85d50.jpg" alt="Nắp chai xanh lá 2">
+              <img src="product_img/307_green/z7814233450961_56bea35a3d1bbf9c372bb260fb381072.jpg" alt="Nắp chai xanh lá 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
