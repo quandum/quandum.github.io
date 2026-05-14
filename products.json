@@ -1,0 +1,313 @@
+{
+  "products": [
+    {
+      "name": "Tay cầm trắng",
+      "cost": "1.5L",
+      "description": "Tên gốc: 1.5L Handle White. Dòng màu trắng. Ảnh từ 2 thư mục: 1Liter5_Handle/1Liter5_White và 1liter5_handle_1liter5_white.",
+      "color": "white",
+      "type": "handle",
+      "images": [
+        "product_img/1Liter5_Handle/1Liter5_White/z7820609909244_a90aed8f2e1820767570314a71c3c824_1.jpg",
+        "product_img/1Liter5_Handle/1Liter5_White/z7820609982173_bd3664b41fe840c646f80207adbfb668_1.jpg",
+        "product_img/1liter5_handle_1liter5_white/1liter5_handle_1liter5_white_1.jpg",
+        "product_img/1liter5_handle_1liter5_white/1liter5_handle_1liter5_white_2.jpg"
+      ]
+    },
+    {
+      "name": "Nắp dầu ăn",
+      "cost": "27",
+      "description": "Tên gốc: 27 Cooking Oil Cap. Có ảnh bìa ở 27Phi_CookingOil_Cap/27cost_CookingOil_Background.jpg. Hình minh họa nằm trong 27cost_cookingoil_cap, 27cost_cookingoil_cap_27cost_cookingoil_yellow và 27Phi_CookingOil_Cap/27cost_CookingOil_Yellow.",
+      "color": "yellow",
+      "type": "cap",
+      "images": [
+        "product_img/27cost_cookingoil_cap/27cost_cookingoil_cap_1.jpg",
+        "product_img/27cost_cookingoil_cap_27cost_cookingoil_yellow/27cost_cookingoil_cap_27cost_cookingoil_yellow_1.jpg",
+        "product_img/27Phi_CookingOil_Cap/27cost_CookingOil_Yellow/z7814362317164_b1aea7d53e525a72b2992d31b5eb3b8b_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp xanh biển",
+      "cost": "28",
+      "description": "Tên gốc: 28 Cap 201 Blue. Có ảnh bìa ở 28cost_Cap/28cost_Background.jpg và 28phi-cap/28cost_cap_1.jpg. Hình minh họa nằm trong 28cost_Cap/201Blue và 28cost_cap_201blue.",
+      "color": "blue",
+      "type": "cap",
+      "images": [
+        "product_img/28cost_Cap/201Blue/z7820603389608_55a7ab1e0ec22383048ee5abd894c534_1.jpg",
+        "product_img/28cost_Cap/201Blue/z7820603503223_1005ef606f45ea6ab69050ec96db2f0b_1.jpg",
+        "product_img/28cost_Cap/201Blue/z7820603674707_d5aa976239c10293f2fefd8c03b06930_1.jpg",
+        "product_img/28cost_cap_201blue/28cost_cap_201blue_1.jpg",
+        "product_img/28cost_cap_201blue/28cost_cap_201blue_2.jpg",
+        "product_img/28cost_cap_201blue/28cost_cap_201blue_3.jpg"
+      ]
+    },
+    {
+      "name": "Nắp đen ngắn",
+      "cost": "28",
+      "description": "Tên gốc: 28 Cap Black Short Collar. Hình minh họa nằm trong 28cost_Cap/28cost_BlackShortCollar và 28cost_cap_28cost_blackshortcollar.",
+      "color": "black",
+      "type": "cap",
+      "images": [
+        "product_img/28cost_Cap/28cost_BlackShortCollar/z7820602627156_38172bd955bcee4cd9bfc4bbb2029e46_1.jpg",
+        "product_img/28cost_Cap/28cost_BlackShortCollar/z7820602640035_12525a0cca7a63e82905a6515d662110_1.jpg",
+        "product_img/28cost_Cap/28cost_BlackShortCollar/z7820602641010_5307741f06ef306ac66968075c54ce9a_1.jpg",
+        "product_img/28cost_cap_28cost_blackshortcollar/28cost_cap_28cost_blackshortcollar_1.jpg",
+        "product_img/28cost_cap_28cost_blackshortcollar/28cost_cap_28cost_blackshortcollar_2.jpg",
+        "product_img/28cost_cap_28cost_blackshortcollar/28cost_cap_28cost_blackshortcollar_3.jpg"
+      ]
+    },
+    {
+      "name": "Nắp trắng ngắn",
+      "cost": "28",
+      "description": "Tên gốc: 28 Cap White Short Collar. Hình minh họa nằm trong 28cost_Cap/28cost_WhiteShortCollar và 28cost_cap_28cost_whiteshortcollar.",
+      "color": "white",
+      "type": "cap",
+      "images": [
+        "product_img/28cost_Cap/28cost_WhiteShortCollar/z7820602067297_5d9dbf49e22b4ba4eef647f85cf819a1_1.jpg",
+        "product_img/28cost_Cap/28cost_WhiteShortCollar/z7820602067623_7aaa5342bb345ecf2689907308ad6a28_1.jpg",
+        "product_img/28cost_Cap/28cost_WhiteShortCollar/z7820602082806_4887a5b3d841409fcb518e17951b4421_1.jpg",
+        "product_img/28cost_cap_28cost_whiteshortcollar/28cost_cap_28cost_whiteshortcollar_1.jpg",
+        "product_img/28cost_cap_28cost_whiteshortcollar/28cost_cap_28cost_whiteshortcollar_2.jpg",
+        "product_img/28cost_cap_28cost_whiteshortcollar/28cost_cap_28cost_whiteshortcollar_3.jpg"
+      ]
+    },
+    {
+      "name": "Nắp vàng",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap 305 Yellow. Có ảnh bìa ở 30cost_cap/30cost_cap_1.jpg và 30Phi_Cap/30cost_Background.jpg. Hình minh họa nằm trong 30cost_cap_305yellow và 30Phi_Cap/305Yellow.",
+      "color": "yellow",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_305yellow/30cost_cap_305yellow_1.jpg",
+        "product_img/30cost_cap_305yellow/30cost_cap_305yellow_2.jpg",
+        "product_img/30cost_cap_305yellow/30cost_cap_305yellow_3.jpg",
+        "product_img/30Phi_Cap/305Yellow/z7814256404024_aebb5dbe1dab891cec4fbf7a728ad934_1.jpg",
+        "product_img/30Phi_Cap/305Yellow/z7814256413984_3c18f401c903dbbcfac26ab5ec08f843_1.jpg",
+        "product_img/30Phi_Cap/305Yellow/z7814256414352_d67e6c3c53e93486f8d101b44671bd86_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp đen",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap 307 Black. Hình minh họa nằm trong 30cost_cap_307black và 30Phi_Cap/307Black.",
+      "color": "black",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_307black/30cost_cap_307black_1.jpg",
+        "product_img/30cost_cap_307black/30cost_cap_307black_2.jpg",
+        "product_img/30cost_cap_307black/30cost_cap_307black_3.jpg",
+        "product_img/30Phi_Cap/307Black/z7814320289271_453b84460e905be4c003b029a05d7cbc_1.jpg",
+        "product_img/30Phi_Cap/307Black/z7814320290419_3023ddfcb7ddf3349c874695e9bc78ae_1.jpg",
+        "product_img/30Phi_Cap/307Black/z7814320299997_85a0d745f5116b953c02a6e5c2cf706c_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp xanh dương",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap 307 Blue. Hình minh họa nằm trong 30cost_cap_307blue và 30Phi_Cap/307Blue.",
+      "color": "blue",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_307blue/30cost_cap_307blue_1.jpg",
+        "product_img/30cost_cap_307blue/30cost_cap_307blue_2.jpg",
+        "product_img/30cost_cap_307blue/30cost_cap_307blue_3.jpg",
+        "product_img/30cost_cap_307blue/30cost_cap_307blue_4.jpg",
+        "product_img/30cost_cap_307blue/30cost_cap_307blue_5.jpg",
+        "product_img/30Phi_Cap/307Blue/z7814208896027_3ee51f47c8496d8bb2225c6800f42923_1.jpg",
+        "product_img/30Phi_Cap/307Blue/z7814208903232_bab7589a76e2170bee92d17fa20326d8_1.jpg",
+        "product_img/30Phi_Cap/307Blue/z7814208905469_f5d20cedd3f19b439bfc331637fb49e4_1.jpg",
+        "product_img/30Phi_Cap/307Blue/z7814208917298_29a8e14d498500045d6a22e3bec450da_1.jpg",
+        "product_img/30Phi_Cap/307Blue/z7814208925989_24c78e48c5600197a7298577a21df261_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp xanh lá",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap 307 Green. Hình minh họa nằm trong 30cost_cap_307green và 30Phi_Cap/307Green.",
+      "color": "green",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_307green/30cost_cap_307green_1.jpg",
+        "product_img/30cost_cap_307green/30cost_cap_307green_2.jpg",
+        "product_img/30cost_cap_307green/30cost_cap_307green_3.jpg",
+        "product_img/30Phi_Cap/307Green/z7814233439312_ca537363ee59c3b67a9816ec60f29172_1.jpg",
+        "product_img/30Phi_Cap/307Green/z7814233444657_624c6671cf7548dba35321e23cd85d50_1.jpg",
+        "product_img/30Phi_Cap/307Green/z7814233450961_56bea35a3d1bbf9c372bb260fb381072_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp vàng lá",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap Yellow With Leaves. Hình minh họa nằm trong 30cost_cap_30cost_yellowwithleaves và 30Phi_Cap/30cost_YellowWithLeaves.",
+      "color": "yellow",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_30cost_yellowwithleaves/30cost_cap_30cost_yellowwithleaves_1.jpg",
+        "product_img/30cost_cap_30cost_yellowwithleaves/30cost_cap_30cost_yellowwithleaves_2.jpg",
+        "product_img/30cost_cap_30cost_yellowwithleaves/30cost_cap_30cost_yellowwithleaves_3.jpg",
+        "product_img/30cost_cap_30cost_yellowwithleaves/30cost_cap_30cost_yellowwithleaves_4.jpg",
+        "product_img/30Phi_Cap/30cost_YellowWithLeaves/z7821434445887_61bb9f811f71acf7c251c992a3b11b5d_1.jpg",
+        "product_img/30Phi_Cap/30cost_YellowWithLeaves/z7821434454368_0a85e5638978ed857a4f83910bc13e3e_1.jpg",
+        "product_img/30Phi_Cap/30cost_YellowWithLeaves/z7821434701478_1c470712169a51bdc91bb737b54aab63_1.jpg",
+        "product_img/30Phi_Cap/30cost_YellowWithLeaves/z7821451749342_93846266f8b0307793d97e612c4e6b2d_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp đồng",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap H01NG Bronze. Hình minh họa nằm trong 30cost_cap_h01ng_bronze và 30Phi_Cap/H01NG_Bronze.",
+      "color": "bronze",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_h01ng_bronze/30cost_cap_h01ng_bronze_1.jpg",
+        "product_img/30cost_cap_h01ng_bronze/30cost_cap_h01ng_bronze_2.jpg",
+        "product_img/30cost_cap_h01ng_bronze/30cost_cap_h01ng_bronze_3.jpg",
+        "product_img/30Phi_Cap/H01NG_Bronze/z7821481483517_0760f9283f8b18337fbf7886ed8053e2_1.jpg",
+        "product_img/30Phi_Cap/H01NG_Bronze/z7821481501087_b15a9a2542a52fd4e1c2f7eb0958a410_1.jpg",
+        "product_img/30Phi_Cap/H01NG_Bronze/z7821481502253_9614d43ddc57a4d232574c767f595267_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp trắng",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap H01 White. Hình minh họa nằm trong 30cost_cap_h01white và 30Phi_Cap/H01White.",
+      "color": "white",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_h01white/30cost_cap_h01white_1.jpg",
+        "product_img/30cost_cap_h01white/30cost_cap_h01white_2.jpg",
+        "product_img/30cost_cap_h01white/30cost_cap_h01white_3.jpg",
+        "product_img/30Phi_Cap/H01White/z7817949302982_44a6ea5f203807b6f83464a78844545d_1.jpg",
+        "product_img/30Phi_Cap/H01White/z7817949306033_d8774781f563ba811af0fd4158a61baf_1.jpg",
+        "product_img/30Phi_Cap/H01White/z7817949418109_b3426528a6ae87dcab79fe3ddd50fe89_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp tím HH",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap HH Purple. Hình minh họa nằm trong 30cost_cap_hh_purple và 30Phi_Cap/HH_Purple.",
+      "color": "purple",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_hh_purple/30cost_cap_hh_purple_1.jpg",
+        "product_img/30cost_cap_hh_purple/30cost_cap_hh_purple_2.jpg",
+        "product_img/30cost_cap_hh_purple/30cost_cap_hh_purple_3.jpg",
+        "product_img/30Phi_Cap/HH_Purple/z7821516204232_ee7ea0189785cfdab0220af9119e4a79_1.jpg",
+        "product_img/30Phi_Cap/HH_Purple/z7821516204573_c8e37440dad476e0e36a4ff029575d66_1.jpg",
+        "product_img/30Phi_Cap/HH_Purple/z7821516222145_15a0cc93297eb5217e3670662f1fc19b_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp đỏ HH",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap HH Red. Hình minh họa nằm trong 30cost_cap_hhred và 30Phi_Cap/HhRed.",
+      "color": "red",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_hhred/30cost_cap_hhred_1.jpg",
+        "product_img/30cost_cap_hhred/30cost_cap_hhred_2.jpg",
+        "product_img/30cost_cap_hhred/30cost_cap_hhred_3.jpg",
+        "product_img/30Phi_Cap/HhRed/z7817938914463_e8831cc1f5752e81ec1a3feea9515736_1.jpg",
+        "product_img/30Phi_Cap/HhRed/z7817938925294_2a3538bd4785d744253052cf185645af_1.jpg",
+        "product_img/30Phi_Cap/HhRed/z7817938932885_9644c2bb77b79818402f6a1e1be40058_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp hồng ngắn",
+      "cost": "30",
+      "description": "Tên gốc: 30 Cap Short Pink. Hình minh họa nằm trong 30cost_cap_shortpink và 30Phi_Cap/ShortPink.",
+      "color": "pink",
+      "type": "cap",
+      "images": [
+        "product_img/30cost_cap_shortpink/30cost_cap_shortpink_1.jpg",
+        "product_img/30cost_cap_shortpink/30cost_cap_shortpink_2.jpg",
+        "product_img/30cost_cap_shortpink/30cost_cap_shortpink_3.jpg",
+        "product_img/30Phi_Cap/ShortPink/z7817928440763_ce71799fc2882fe32b9c6b129f431fe3_1.jpg",
+        "product_img/30Phi_Cap/ShortPink/z7817928443003_cf52ee0fb76b7d706de470ec315a9da1_1.jpg",
+        "product_img/30Phi_Cap/ShortPink/z7817928565947_5c089514da079b745df9b8aeb2549475_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp đen lá",
+      "cost": "38",
+      "description": "Tên gốc: 38 Cap Black With Leaves. Có ảnh bìa ở 38cost_cap/38cost_cap_1.jpg và 38Phi_Cap/38cost_Background.jpg. Hình minh họa nằm trong 38cost_cap_38cost_blackwithleaves và 38Phi_Cap/38cost_BlackWithLeaves.",
+      "color": "black",
+      "type": "cap",
+      "images": [
+        "product_img/38cost_cap_38cost_blackwithleaves/38cost_cap_38cost_blackwithleaves_1.jpg",
+        "product_img/38cost_cap_38cost_blackwithleaves/38cost_cap_38cost_blackwithleaves_2.jpg",
+        "product_img/38cost_cap_38cost_blackwithleaves/38cost_cap_38cost_blackwithleaves_3.jpg",
+        "product_img/38cost_cap_38cost_blackwithleaves/38cost_cap_38cost_blackwithleaves_4.jpg",
+        "product_img/38cost_cap_38cost_blackwithleaves/38cost_cap_38cost_blackwithleaves_5.jpg",
+        "product_img/38Phi_Cap/38cost_BlackWithLeaves/z7820427946039_230c7f4d8bbba3efd73d44aea7816acd_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlackWithLeaves/z7820427948124_45eafbae197a0cd41b72dd2c16b0f1da_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlackWithLeaves/z7820427956220_9872698a04f8d225b33c53f32e56e712_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlackWithLeaves/z7820427960124_41bf9b885046a6d15c44d875bb2cd9c5_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlackWithLeaves/z7820427977703_fd19a8b199a41c729a7084468e841efe_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp xanh dương lá",
+      "cost": "38",
+      "description": "Tên gốc: 38 Cap Blue With Leaves. Hình minh họa nằm trong 38cost_cap_38cost_bluewithleaves và 38Phi_Cap/38cost_BlueWithLeaves.",
+      "color": "blue",
+      "type": "cap",
+      "images": [
+        "product_img/38cost_cap_38cost_bluewithleaves/38cost_cap_38cost_bluewithleaves_1.jpg",
+        "product_img/38cost_cap_38cost_bluewithleaves/38cost_cap_38cost_bluewithleaves_2.jpg",
+        "product_img/38cost_cap_38cost_bluewithleaves/38cost_cap_38cost_bluewithleaves_3.jpg",
+        "product_img/38cost_cap_38cost_bluewithleaves/38cost_cap_38cost_bluewithleaves_4.jpg",
+        "product_img/38Phi_Cap/38cost_BlueWithLeaves/z7820407775152_5be1fd2e581555f0a3d6eb1cd1b708f7_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlueWithLeaves/z7820407782130_d2e1e198b88d2ab8553bcb3e0b98f9bf_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlueWithLeaves/z7820407793858_c7e56256c3755b7742077d0f98bef4fe_1.jpg",
+        "product_img/38Phi_Cap/38cost_BlueWithLeaves/z7820407794166_e71e2b6ef63a25ab9f4904f2a07418ad_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp trắng lá",
+      "cost": "38",
+      "description": "Tên gốc: 38 Cap White With Leaves. Hình minh họa nằm trong 38cost_cap_38cost_whitewithleaves và 38Phi_Cap/38cost_WhiteWithLeaves.",
+      "color": "white",
+      "type": "cap",
+      "images": [
+        "product_img/38cost_cap_38cost_whitewithleaves/38cost_cap_38cost_whitewithleaves_1.jpg",
+        "product_img/38cost_cap_38cost_whitewithleaves/38cost_cap_38cost_whitewithleaves_2.jpg",
+        "product_img/38cost_cap_38cost_whitewithleaves/38cost_cap_38cost_whitewithleaves_3.jpg",
+        "product_img/38cost_cap_38cost_whitewithleaves/38cost_cap_38cost_whitewithleaves_4.jpg",
+        "product_img/38cost_cap_38cost_whitewithleaves/38cost_cap_38cost_whitewithleaves_5.jpg",
+        "product_img/38Phi_Cap/38cost_WhiteWithLeaves/z7820414495811_795522ae517090e9403d0f48f6d7839f_1.jpg",
+        "product_img/38Phi_Cap/38cost_WhiteWithLeaves/z7820414506761_b21394ed1973bfc0beee607f41e26d86_1.jpg",
+        "product_img/38Phi_Cap/38cost_WhiteWithLeaves/z7820414518399_0754af260b43cfc080eede8b5bf2fba1_1.jpg",
+        "product_img/38Phi_Cap/38cost_WhiteWithLeaves/z7820414522277_40e70ad2b245abc6038aae4a87756f4d_1.jpg",
+        "product_img/38Phi_Cap/38cost_WhiteWithLeaves/z7820414530558_036a93274535ccb908a4e7fbab595c81_1.jpg"
+      ]
+    },
+    {
+      "name": "Nắp xanh",
+      "cost": "5L",
+      "description": "Tên gốc: 5L Cap Blue. Hình minh họa nằm trong 5Liter_Cap/5Liter_Blue và 5liter_cap_5liter_blue.",
+      "color": "blue",
+      "type": "cap",
+      "images": [
+        "product_img/5Liter_Cap/5Liter_Blue/z7821402747717_3e349f86d10b8e5a6524e220b6187d31_1.jpg",
+        "product_img/5Liter_Cap/5Liter_Blue/z7821402752433_d5a7b38162bd4e2cde85ab585075adb2_1.jpg",
+        "product_img/5Liter_Cap/5Liter_Blue/z7821402759123_ab4ea043ea0c7f319e5019c5693d2d71_1.jpg",
+        "product_img/5liter_cap_5liter_blue/5liter_cap_5liter_blue_1.jpg",
+        "product_img/5liter_cap_5liter_blue/5liter_cap_5liter_blue_2.jpg",
+        "product_img/5liter_cap_5liter_blue/5liter_cap_5liter_blue_3.jpg"
+      ]
+    },
+    {
+      "name": "Tay xách xanh",
+      "cost": "5L",
+      "description": "Tên gốc: 5L Handle Blue. Hình minh họa nằm trong 5Liter_Handle/5Liter_Blue và 5liter_handle_5liter_blue.",
+      "color": "blue",
+      "type": "handle",
+      "images": [
+        "product_img/5Liter_Handle/5Liter_Blue/z7821073448064_d0386b4e7861daabcf4f8edb85ede089_1.jpg",
+        "product_img/5Liter_Handle/5Liter_Blue/z7821073542787_c075545f28395c3053cda0c1e3619eac_1.jpg",
+        "product_img/5liter_handle_5liter_blue/5liter_handle_5liter_blue_1.jpg",
+        "product_img/5liter_handle_5liter_blue/5liter_handle_5liter_blue_2.jpg"
+      ]
+    }
+  ]
+}

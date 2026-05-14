@@ -40,6 +40,8 @@
       box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
     }
 
+
+    
     .banner {
       margin-bottom: 24px;
       overflow: hidden;
@@ -47,13 +49,16 @@
       box-shadow: 0 12px 30px rgba(20, 30, 60, 0.12);
       border: 1px solid var(--border);
       background: #fff;
+      height: clamp(140px, 20vh, 260px);
     }
 
     .banner img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
+
 
     .menu-bar {
       display: flex;
@@ -176,7 +181,7 @@
 <body>
   <main class="container">
     <div class="banner">
-      <img src="banner.png" alt="Banner công ty H&amp;H">
+      <img src="banner.jpg" alt="Banner công ty H&amp;H">
     </div>
 
     <nav class="menu-bar" aria-label="Thanh menu chính">
