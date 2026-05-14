@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm Công Ty H&H</title>
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --text: #1b1f2a;
+      --muted: #4a5162;
+      --accent: #0a7a5a;
+      --border: #dde3ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: var(--text);
+      background: linear-gradient(160deg, #eef4ff 0%, #f7f8fc 40%, #ecf8f5 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
+    }
+
+    .banner {
+      margin-bottom: 24px;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(20, 30, 60, 0.12);
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .menu-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 8px 22px rgba(20, 30, 60, 0.06);
+      flex-wrap: wrap;
+    }
+
+    .menu-bar a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      background: #f2f5fb;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+    }
+
+    .menu-bar a:hover {
+      color: var(--accent);
+      border-color: rgba(10, 122, 90, 0.25);
+      background: #eaf7f2;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      text-align: center;
+      font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+      color: var(--accent);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 16px 20px 0;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery img:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="banner">
+      <img src="banner.png" alt="Banner công ty H&amp;H">
+    </div>
+
+    <nav class="menu-bar" aria-label="Thanh menu chính">
+      <a href="index.html#thong-tin-chung">Thông tin chung</a>
+      <a href="products.html">Sản phẩm</a>
+    </nav>
+
+    <section class="card">
+      <h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
+      <div class="products-grid">
+        <div class="product-card">
+          <h3 class="product-title">Nắp Chai Xanh Dương (307 Blue)</h3>
+          <div class="gallery">
+            <img src="product_img/307-blue/blue-1.jpg" alt="Nắp chai xanh dương 1">
+            <img src="product_img/307-blue/blue-2.jpg" alt="Nắp chai xanh dương 2">
+            <img src="product_img/307-blue/blue-3.jpg" alt="Nắp chai xanh dương 3">
+            <img src="product_img/307-blue/blue-4.jpg" alt="Nắp chai xanh dương 4">
+            <img src="product_img/307-blue/blue-5.jpg" alt="Nắp chai xanh dương 5">
+          </div>
+        </div>
+
+        <div class="product-card">
+          <h3 class="product-title">Nắp Chai Xanh Lá (307 Green)</h3>
+          <div class="gallery">
+            <img src="product_img/307-green/green-1.jpg" alt="Nắp chai xanh lá 1">
+            <img src="product_img/307-green/green-2.jpg" alt="Nắp chai xanh lá 2">
+            <img src="product_img/307-green/green-3.jpg" alt="Nắp chai xanh lá 3">
+          </div>
+        </div>
+
+        <div class="product-card">
+          <h3 class="product-title">Nắp Chai Đen (307 Black)</h3>
+          <div class="gallery">
+            <img src="product_img/307-black/black-1.jpg" alt="Nắp chai đen 1">
+            <img src="product_img/307-black/black-2.jpg" alt="Nắp chai đen 2">
+            <img src="product_img/307-black/black-3.jpg" alt="Nắp chai đen 3">
+          </div>
+        </div>
+
+        <div class="product-card">
+          <h3 class="product-title">Nắp Chai Vàng (305 Yellow)</h3>
+          <div class="gallery">
+            <img src="product_img/305-yellow/yellow-1.jpg" alt="Nắp chai vàng 1">
+            <img src="product_img/305-yellow/yellow-2.jpg" alt="Nắp chai vàng 2">
+            <img src="product_img/305-yellow/yellow-3.jpg" alt="Nắp chai vàng 3">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

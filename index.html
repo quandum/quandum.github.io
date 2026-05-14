@@ -40,6 +40,53 @@
       box-shadow: 0 8px 28px rgba(20, 30, 60, 0.08);
     }
 
+    .banner {
+      margin-bottom: 24px;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(20, 30, 60, 0.12);
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .menu-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 8px 22px rgba(20, 30, 60, 0.06);
+      flex-wrap: wrap;
+    }
+
+    .menu-bar a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      background: #f2f5fb;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+    }
+
+    .menu-bar a:hover {
+      color: var(--accent);
+      border-color: rgba(10, 122, 90, 0.25);
+      background: #eaf7f2;
+    }
+
     h1 {
       margin: 0 0 18px;
       text-align: center;
@@ -128,7 +175,16 @@
 </head>
 <body>
   <main class="container">
-    <article class="card">
+    <div class="banner">
+      <img src="banner.png" alt="Banner công ty H&amp;H">
+    </div>
+
+    <nav class="menu-bar" aria-label="Thanh menu chính">
+      <a href="#thong-tin-chung">Thông tin chung</a>
+      <a href="products.html">Sản phẩm</a>
+    </nav>
+
+    <article class="card" id="thong-tin-chung">
       <h1>GIỚI THIỆU CÔNG TY</h1>
 
       <p>
@@ -171,31 +227,5 @@
       </p>
     </article>
 
-    <section class="products-section">
-      <div class="card">
-        <h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
-        <div class="products-grid">
-          <div class="product-card">
-            <h3 class="product-title">Nắp Chai Xanh Dương (307 Blue)</h3>
-            <div class="gallery">
-              <img src="product_img/307_blue/z7814208896027_3ee51f47c8496d8bb2225c6800f42923.jpg" alt="Nắp chai xanh dương 1">
-              <img src="product_img/307_blue/z7814208903232_bab7589a76e2170bee92d17fa20326d8.jpg" alt="Nắp chai xanh dương 2">
-              <img src="product_img/307_blue/z7814208905469_f5d20cedd3f19b439bfc331637fb49e4.jpg" alt="Nắp chai xanh dương 3">
-              <img src="product_img/307_blue/z7814208917298_29a8e14d498500045d6a22e3bec450da.jpg" alt="Nắp chai xanh dương 4">
-              <img src="product_img/307_blue/z7814208925989_24c78e48c5600197a7298577a21df261.jpg" alt="Nắp chai xanh dương 5">
-            </div>
-          </div>
-
-          <div class="product-card">
-            <h3 class="product-title">Nắp Chai Xanh Lá (307 Green)</h3>
-            <div class="gallery">
-              <img src="product_img/307_green/z7814233439312_ca537363ee59c3b67a9816ec60f29172.jpg" alt="Nắp chai xanh lá 1">
-              <img src="product_img/307_green/z7814233444657_624c6671cf7548dba35321e23cd85d50.jpg" alt="Nắp chai xanh lá 2">
-              <img src="product_img/307_green/z7814233450961_56bea35a3d1bbf9c372bb260fb381072.jpg" alt="Nắp chai xanh lá 3">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 </body>
 </html>
