@@ -469,10 +469,6 @@
         <p id="filter-summary" class="filter-summary"></p>
       </div>
       <div id="products-status" class="status loading">Đang tải danh sách sản phẩm...</div>
-      <div style="text-align:center;margin-top:10px;">
-        <button id="load-local-btn" type="button" style="border-radius:10px;padding:8px 12px;border:1px solid var(--border);background:#fff">Tải từ file (mở products.json)</button>
-        <input id="load-local-input" type="file" accept="application/json" style="display:none">
-      </div>
       <div id="products-grid" class="products-grid" aria-live="polite"></div>
     </section>
   </main>
@@ -671,7 +667,7 @@
 
       if (!data || !Array.isArray(data.products) || data.products.length === 0) {
         productsStatus.className = 'status error';
-        productsStatus.textContent = 'Không tải được products.json tự động. Bạn có thể chạy một server local hoặc bấm nút "Tải từ file" để chọn products.json.';
+        productsStatus.textContent = 'Không tải được products.json tự động. Bạn có thể chạy một server local để tải dữ liệu.';
         console.error('Failed to load products.json from candidates:', candidates);
         return;
       }
@@ -684,39 +680,6 @@
 
       renderProducts();
     }
-
-    // support loading products.json via file picker when page opened with file://
-    const loadLocalBtn = document.getElementById('load-local-btn');
-    const loadLocalInput = document.getElementById('load-local-input');
-
-    loadLocalBtn.addEventListener('click', () => loadLocalInput.click());
-
-    loadLocalInput.addEventListener('change', (ev) => {
-      const file = ev.target.files && ev.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        try {
-          const data = JSON.parse(reader.result);
-          const products = Array.isArray(data.products) ? data.products : [];
-          if (products.length === 0) {
-            productsStatus.className = 'status error';
-            productsStatus.textContent = 'File không chứa sản phẩm hợp lệ.';
-            return;
-          }
-          allProducts = products;
-          populateSelect(filterCost, getUniqueValues(allProducts, 'cost'));
-          populateSelect(filterColor, getUniqueValues(allProducts, 'color'));
-          populateSelect(filterType, getUniqueValues(allProducts, 'type'));
-          renderProducts();
-        } catch (e) {
-          productsStatus.className = 'status error';
-          productsStatus.textContent = 'Không thể đọc file JSON đã chọn.';
-          console.error(e);
-        }
-      };
-      reader.readAsText(file);
-    });
 
     filterCost.addEventListener('change', renderProducts);
     filterColor.addEventListener('change', renderProducts);
