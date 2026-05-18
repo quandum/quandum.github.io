@@ -269,6 +269,7 @@
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 3;
+      line-clamp: 3;
       -webkit-box-orient: vertical;
     }
 
@@ -401,6 +402,100 @@
       color: #9a2d2d;
     }
 
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    body.modal-open .container {
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .product-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background: linear-gradient(160deg, #eef4ff 0%, #f6f7fb 42%, #eefaf4 100%);
+    }
+
+    .product-modal[hidden] {
+      display: none;
+    }
+
+    .product-modal-card {
+      width: min(920px, 100%);
+      max-height: min(88vh, 860px);
+      overflow: auto;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 22px 55px rgba(12, 21, 44, 0.28);
+      padding: 20px;
+    }
+
+    .product-modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .product-modal-title {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.6vw, 1.75rem);
+      color: var(--text);
+    }
+
+    .back-to-list {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #26425f, #1f3248);
+      color: #fff;
+      padding: 10px 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .back-to-list:hover {
+      transform: translateY(-1px);
+      opacity: 0.94;
+    }
+
+    .product-modal-description {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .product-modal-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .product-modal-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+    }
+
+    .product-modal-gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid #e5ebf3;
+      background: #f3f6fb;
+      object-fit: cover;
+    }
+
     @media (max-width: 640px) {
       .container {
         margin-top: 18px;
@@ -418,6 +513,18 @@
 
       .filters-grid {
         grid-template-columns: 1fr;
+      }
+
+      .product-modal {
+        padding: 12px;
+      }
+
+      .product-modal-card {
+        padding: 14px;
+      }
+
+      .product-modal-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       }
     }
   </style>
@@ -445,7 +552,7 @@
         </div>
         <div class="filters-grid">
           <div class="filter-field">
-            <label for="filter-cost">Chi phí</label>
+            <label for="filter-cost">nắp phí</label>
             <select id="filter-cost">
               <option value="all">Tất cả</option>
             </select>
@@ -473,6 +580,18 @@
     </section>
   </main>
 
+  <section id="product-modal" class="product-modal" hidden aria-live="polite" aria-label="Xem chi tiết sản phẩm">
+    <article class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+      <div class="product-modal-top">
+        <h2 id="product-modal-title" class="product-modal-title"></h2>
+        <button id="close-product-modal" type="button" class="back-to-list">Quay về danh mục</button>
+      </div>
+      <p id="product-modal-description" class="product-modal-description"></p>
+      <div id="product-modal-meta" class="product-modal-meta"></div>
+      <div id="product-modal-gallery" class="product-modal-gallery"></div>
+    </article>
+  </section>
+
   <!-- products.json is loaded dynamically; embedded JSON removed -->
 
   <script>
@@ -483,6 +602,12 @@
     const filterType = document.getElementById('filter-type');
     const filterReset = document.getElementById('filter-reset');
     const filterSummary = document.getElementById('filter-summary');
+    const productModal = document.getElementById('product-modal');
+    const productModalTitle = document.getElementById('product-modal-title');
+    const productModalDescription = document.getElementById('product-modal-description');
+    const productModalMeta = document.getElementById('product-modal-meta');
+    const productModalGallery = document.getElementById('product-modal-gallery');
+    const closeProductModalButton = document.getElementById('close-product-modal');
     let allProducts = [];
 
     function getUniqueValues(products, key) {
@@ -520,7 +645,7 @@
       const filters = getActiveFilters();
       const activeFilters = [];
 
-      if (filters.cost !== 'all') activeFilters.push(`chi phí ${filters.cost}`);
+      if (filters.cost !== 'all') activeFilters.push(`nắp phí ${filters.cost}`);
       if (filters.color !== 'all') activeFilters.push(`màu ${filters.color}`);
       if (filters.type !== 'all') activeFilters.push(`loại ${filters.type}`);
 
@@ -555,20 +680,41 @@
       updateSummary(visibleProducts.length);
     }
 
-    function createGallery(product) {
-      const gallery = document.createElement('div');
-      gallery.className = 'gallery';
-      gallery.hidden = true;
+    function openProductModal(product) {
+      productModalTitle.textContent = product.name;
+      productModalDescription.textContent = product.description || '';
 
-      product.images.forEach((imagePath, index) => {
+      productModalMeta.innerHTML = '';
+      const costTag = document.createElement('span');
+      costTag.className = 'tag';
+      costTag.textContent = `nắp phí: ${product.cost}`;
+
+      const colorTag = document.createElement('span');
+      colorTag.className = 'tag';
+      colorTag.textContent = `màu: ${product.color}`;
+
+      const typeTag = document.createElement('span');
+      typeTag.className = 'tag';
+      typeTag.textContent = `loại: ${product.type}`;
+
+      productModalMeta.append(costTag, colorTag, typeTag);
+
+      productModalGallery.innerHTML = '';
+      (product.images || []).forEach((imagePath, index) => {
         const image = document.createElement('img');
         image.alt = `${product.name} ${index + 1}`;
         image.loading = 'lazy';
         image.src = imagePath;
-        gallery.appendChild(image);
+        productModalGallery.appendChild(image);
       });
 
-      return gallery;
+      productModal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeProductModal() {
+      productModal.hidden = true;
+      document.body.classList.remove('modal-open');
     }
 
     function createProductCard(product) {
@@ -602,7 +748,7 @@
 
       const costTag = document.createElement('span');
       costTag.className = 'tag';
-      costTag.textContent = `Chi phí: ${product.cost}`;
+      costTag.textContent = `nắp phí: ${product.cost}`;
 
       const countBadge = document.createElement('span');
       countBadge.className = 'count-badge';
@@ -620,14 +766,10 @@
       const toggleButton = document.createElement('button');
       toggleButton.type = 'button';
       toggleButton.className = 'toggle-images';
-      toggleButton.textContent = 'Xem ảnh';
-
-      const gallery = createGallery(product);
+      toggleButton.textContent = 'Xem sản phẩm';
 
       toggleButton.addEventListener('click', () => {
-        const willShow = gallery.hidden;
-        gallery.hidden = !willShow;
-        toggleButton.textContent = willShow ? 'Ẩn ảnh' : 'Xem ảnh';
+        openProductModal(product);
       });
 
       actions.appendChild(toggleButton);
@@ -637,7 +779,6 @@
 
       card.append(head);
       head.appendChild(body);
-      card.appendChild(gallery);
 
       return card;
     }
@@ -691,6 +832,8 @@
       filterType.value = 'all';
       renderProducts();
     });
+
+    closeProductModalButton.addEventListener('click', closeProductModal);
 
     loadProducts();
   </script>
